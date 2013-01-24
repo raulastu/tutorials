@@ -1,0 +1,21 @@
+1. Find this following line in /etc/apache2/httpd.conf
+#LoadModule php5_module libexec/apache2/libphp5.so
+and uncomment it.
+
+2. Find this line
+<Directory />
+    Options FollowSymLinks
+    AllowOverride None -> to All
+    Order deny,allow
+    Deny from all -> to Allow from all
+</Directory>
+
+This will allow the server to access any folder so that you can point your DocumentRoot to whatever folder you want.
+
+3. set your DocumentRoot
+
+and voila
+sudo apachectl start/restart will follow ever after.
+
+--
+Raul
