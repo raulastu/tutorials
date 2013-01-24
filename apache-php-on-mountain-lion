@@ -17,5 +17,7 @@ This will allow the server to access any folder so that you can point your Docum
 and voila
 sudo apachectl start/restart will follow ever after.
 
+Some extra info:
+http://superfancy.net/php-mysql-apache-in-mac-osx-leopard/
 --
 Raul
